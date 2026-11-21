@@ -12,7 +12,8 @@ hub/
 ├── skills/          # 技能库（SKILL.md）
 ├── templates/       # 新项目 / 新脚本脚手架
 ├── devices.md       # 设备清单
-└── bootstrap.ps1    # 新设备一条命令初始化
+├── bootstrap.ps1    # 新设备一条命令初始化（Windows 通用）
+└── bootstrap/       # 灵枢(dsh-memory) 一键接入 DSH（Windows/macOS 通用）
 ```
 
 ## 日常循环
@@ -26,10 +27,19 @@ git push                 # 收工前
 
 ## 新设备接入
 
+Windows：
 ```powershell
 git clone git@github.com:guguktao-byte/hub.git D:\pythonProject\hub
 cd D:\pythonProject\hub
 .\bootstrap.ps1
+```
+
+macOS：
+```bash
+git clone git@github.com:guguktao-byte/hub.git ~/pythonProject/hub
+cd ~/pythonProject/hub
+python3 bootstrap/bootstrap_lingshu.py --check   # 先体检
+python3 bootstrap/bootstrap_lingshu.py           # 接入灵枢
 ```
 
 ## 新项目接入
