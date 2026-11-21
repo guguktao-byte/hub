@@ -1,0 +1,11 @@
+# 灵枢 md_cg 运行时产物（本机生成、易变，不入库；真正记忆 = 各层 *.md 节点）
+memory/mdcg/**/*.lock
+memory/mdcg/_*.json
+memory/mdcg/_*.jsonl
+memory/mdcg/_*.log
+memory/mdcg/_hot/
+memory/mdcg/_node_locks/
+memory/mdcg/_index_log/
+memory/mdcg/trash/
+memory/mdcg/hippocampus/
+memory/mdcg/.DS_Store
