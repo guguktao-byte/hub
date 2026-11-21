@@ -31,3 +31,7 @@
 | 正式产品 | 独立仓库 | AGENTS.md + docs + git + 灵枢域 |
 | 可复用脚本 | `scripts` 仓库 | README + NOTES + git |
 | 一次性脚本 | 本地 tmp | 不入库、用完可弃 |
+
+## 5. 跨设备接入（含 macOS）
+
+新设备（尤其 macOS）clone hub 后，**先读 `docs/macOS接入.md`**，按其中步骤：体检 → 接入灵枢 → 重启 DSH 验收 cg/stg。日常同步仍遵循第 1 节纪律（`git pull --rebase` / diff 确认 / push）。灵枢一键接入脚本见 `bootstrap/`（Windows/macOS 通用）。

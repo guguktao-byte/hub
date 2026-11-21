@@ -12,6 +12,7 @@ hub/
 ├── skills/          # 技能库（SKILL.md）
 ├── templates/       # 新项目 / 新脚本脚手架
 ├── devices.md       # 设备清单
+├── docs/            # 接入与运维文档（如 macOS接入.md）
 ├── bootstrap.ps1    # 新设备一条命令初始化（Windows 通用）
 └── bootstrap/       # 灵枢(dsh-memory) 一键接入 DSH（Windows/macOS 通用）
 ```
@@ -41,6 +42,8 @@ cd ~/pythonProject/hub
 python3 bootstrap/bootstrap_lingshu.py --check   # 先体检
 python3 bootstrap/bootstrap_lingshu.py           # 接入灵枢
 ```
+
+> 详细步骤、macOS 专属注意事项、日常同步循环与 agent 执行清单见 [docs/macOS接入.md](docs/macOS接入.md)。
 
 ## 新项目接入
 
